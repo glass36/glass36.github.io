@@ -25,4 +25,4 @@ You got a dream, you gotta protect it. People can’t do something themselves,th
 
 ---
 
-<font size=5>来都来了,留个评论让我知道你吧</font>
+<font size=5>留个评论让我知道你来过吧~</font>
