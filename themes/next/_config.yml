@@ -128,8 +128,8 @@ menu:
   home: / || home
   archives: /archives/ || archive
   tags: /tags/ || tags
+  categories: /categories/ || th
   about: /about/ || user
-  #categories: /categories/ || th
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -190,7 +190,7 @@ social:
   GitHub: https://github.com/glass36 || github
   E-Mail: mailto:shen_zx08@163.com || envelope
   CSDN: https://blog.csdn.net/glass36 || csdn
-  #Weibo: https://weibo.com/yourname || weibo
+  #Weibo: https://weibo.com/yourname || codiepie
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -205,9 +205,7 @@ social_icons:
   icons_only: false
   transition: false
   # Icon Mappings
-  CSDN: codiepie
-
-
+ 
 # Blog rolls
 links_settings:
   icon: link
@@ -420,9 +418,8 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink: https://github.com/glass36
   title: Follow me on GitHub
-
 
 # ---------------------------------------------------------------
 # Font Settings

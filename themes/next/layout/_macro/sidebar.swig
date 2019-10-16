@@ -45,6 +45,7 @@
           <span>0%</span>
         </div>
       {%- endif %}
+      
 
     </div>
   </aside>
