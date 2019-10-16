@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: JQuer1y个人博客
+title: JQuer1y Blog
 subtitle: 
 description: 来都来了,留下来看看咯~
 keywords: 个人博客
@@ -111,4 +111,4 @@ live2d:
     width: 150
     height: 300
   mobile:
-    show: true
+    show: false

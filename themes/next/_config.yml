@@ -730,7 +730,7 @@ rating:
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
+add_this_id: ra-5da6d3e56002f6da
 
 
 # ---------------------------------------------------------------
@@ -945,7 +945,7 @@ three:
 # For more information: https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: true
-  onmobile: true # Display on mobile or not
+  onmobile: false # Display on mobile or not
   color: "0,0,255" # RGB values, use `,` to separate
   opacity: 0.5 # The opacity of line: 0~1
   zIndex: -1 # z-index property of the background
