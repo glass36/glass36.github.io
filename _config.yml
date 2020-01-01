@@ -5,7 +5,7 @@
 # Site
 title: JQuer1y Blog
 subtitle: 
-description: 来都来了,留下来看看咯~~
+description: 快憋转了，晕了晕了
 keywords: 个人博客
 author: shen
 language: zh-CN
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: Butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -99,7 +99,7 @@ symbols_count_time:
   
 #左下角宠物
 live2d:
-  enable: true
+  enable: false
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/

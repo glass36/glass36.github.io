@@ -5,6 +5,7 @@ tags:
   - Java
 categories: Java学习笔记
 date: 2019-10-19 16:39:33
+description: 从源码带你去了解一个不一样的HashMap
 ---
 
 >本博文碍于作者的学识与见解，难免会有疏漏错误之处，请谅解。<br/>

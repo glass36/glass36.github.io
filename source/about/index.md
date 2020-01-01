@@ -18,11 +18,5 @@ You got a dream, you gotta protect it. People can’t do something themselves,th
 
 
 
-
 <br/>
-<br/>
-
-
----
-
-<font size=5>留个评论让我知道你来过吧~</font>
+<br/><font size=5>留个评论让我知道你来过吧~</font>

@@ -6,15 +6,18 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  Home: / || fa fa-home
-  Archives: /archives/ || fa fa-archive
-  Tags: /tags/ || fa fa-tags
-  Categories: /categories/ || fa fa-folder-open
-  Link: /link/ || fa fa-link
-  About: /about/ || fa fa-heart
-  List||fa fa-list:
-    - Music || /music/ || fa fa-music
-    - Movie || /movies/ || fa fa-film
+  首页: / || fa fa-home
+  时间轴: /archives/ || fa fa-archive
+  文章||fa fa-list:
+    - 标签  || /tags/ || fa fa-tags
+    - 分类  || /categories/ || fa fa-folder-open
+  
+ # Link: /link/ || fa fa-link
+  留言板: /comment/ || fa fa-coffee
+# 关于我: /about/ || fa fa-heart
+ # List||fa fa-list:
+ #   - Music || /music/ || fa fa-music
+ #   - Movie || /movies/ || fa fa-film
 
 
 # Favicon
@@ -38,7 +41,7 @@ favicon: /img/favicon.ico
 # Highlight theme
 # ---------------
 highlight_theme: light
-highlight_copy: false #代碼複製按鈕
+highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false #代碼框不展開，需點擊 '>' 打開
 
@@ -48,16 +51,18 @@ code_word_wrap: false
 # 是否禁止複製（如果禁止，highlight_copy的功能將無效)
 # copyright 複製的内容後面加上版權信息
 copy:
-  enable: false  # true 開啓 / false 禁止
-  copyright: false
+  enable: true  # true 開啓 / false 禁止
+  copyright: true
 
 # social settings
 # formal: 
 #   icon: link
 # ---------------
 social:
-  fa fa-github: https://github.com/jerryc127
-  fa fa-rss: /atom.xml
+  fa fa-github: https://github.com/glass36
+  fa fa-weibo: https://weibo.com/Jquer1y|
+  fa fa-codiepie: https://blog.csdn.net/glass36
+ # fa fa-rss: /atom.xml
 
 ####    search    ####
 # Algolia search
@@ -131,11 +136,11 @@ cdn:
 # Post info settings
 # ---------------
 # avatar: /img/avatar.png
-avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/avatar.png
+avatar: /img/avatar.jpg
 
 # the banner image of index
 # if the banner of another page not setting,it will show the top_img
-top_img: https://i.loli.net/2019/05/22/5ce53eb6dc82757840.jpg
+top_img: /img/top_img.jpg
 
 #the banner image of post
 # if the post not set the post cover and post top image, it will show it
@@ -148,7 +153,7 @@ default_cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg
 archive_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/archive.jpg
 
 # the banner image of tag page
-tag_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/tag-bg.png
+tag_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/archive.jpg
 
 # the banner image of category page
 category_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/category-bg
@@ -165,7 +170,7 @@ post_meta:
 
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#字数统计
 wordcount:
-  enable: false
+  enable: true
 
 toc:
   enable: true
@@ -182,7 +187,7 @@ post_copyright:
 
 # 自動節選
 auto_excerpt:
-  enable: true
+  enable: false
   length: 150
 
 
@@ -239,26 +244,26 @@ disqus:
 
 # valine comment system. https://valine.js.org
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId:   # leancloud application app id
-  appKey:   # leancloud application app key
+  enable: true # if you want use valine,please set this value is true
+  appId: 5seBuKfvJkAR97Ql80MCt43h-9Nh9j0Va  # leancloud application app id
+  appKey: zQq0EVPHpe1TeEeEWvY12usE  # leancloud application app key
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
   verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-cn/en
-  placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: 写下你的评论吧! # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail #valine comment header info
   bg: /img/comment_bg.png  # valine background
 
 #####     Footer Settings    ####
 # ------------------------------------
-since: 2018
+since: 2019
 
-footer_custom_text:
+footer_custom_text: 愿世界的美好与你环环相扣
 
 footer_copyright:
-  enable: true
+  enable: false
 
 ICP:
   enable: false
@@ -297,7 +302,7 @@ Flink:
 
 # 打賞按鈕
 reward:
-  enable: true
+  enable: false
   QR_code:
     - itemlist:
         img: /img/wechat.jpg
@@ -309,7 +314,7 @@ reward:
 # 推薦文章
 related_post:
   enable: true
-  limit: 6 # 顯示推薦文章數目
+  limit: 3 # 顯示推薦文章數目
 
 ####    美化/效果    ####
 #--------------------------------
@@ -365,12 +370,12 @@ canvas_ribbon:
 
 # 動態彩帶
 canvas_ribbon_piao:
-  enable: false
+  enable: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -386,7 +391,7 @@ fireworks:
   enable: false
 
 # 頭像會一直轉圈
-avatar_effect: false
+avatar_effect: true
 
 # 網站顯示模式
 # day 默認模式
@@ -395,7 +400,7 @@ display_mode: day
 
 # 美化post頁顯示
 post_beautify:
-  enable: false
+  enable: true
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: "#F47466"
 
@@ -423,8 +428,8 @@ hr:
 subtitle: 
   enable: true
   sub:
-    - 今日事&#44;今日畢
-    - Never put off till tomorrow what you can do today
+    - 我们一路奋战&#44;不是为了改变世界&#44;而是为了不让世界改变我们。
+    - 世界的美好与你环环相扣
 
 
 
@@ -432,7 +437,7 @@ subtitle:
 #-------------------------------------
 # 側邊欄顯示設置
 aside:
-  position: right # left or right
+  position: left # left or right
   card_author: true
   card_announcement: true
   card_recent_post: true
@@ -443,7 +448,7 @@ aside:
 
 # 網站公告
 announcement:
-  content: 感謝訪問本站，若喜歡請收藏 ^_^
+  content: 博主是一名没有灵魂的码农。无论你是有意还是无意点到本站，都很感谢你的到来 ^_^
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -457,7 +462,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 6/7/2018 00:00:00
+  start_date: 10/10/2019 00:00:00
 
 
 ####   右下角按鈕  ####
@@ -472,7 +477,7 @@ translate:
   #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
   translateDelay: 0
   #博客网址
-  cookieDomain: "https://xxx/"
+  cookieDomain: "http://www.sshenzx.com"
   #當文字是簡體時，按鈕顯示的文字
   msgToTraditionalChinese: "繁"
   #當文字是繁體時，按鈕顯示的文字
