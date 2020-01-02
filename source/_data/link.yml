@@ -1,0 +1,8 @@
+class:
+  class_name: 友情链接
+  link_list:
+    1:
+      name: danni's Blog
+      link: http://dannicheer.com/
+      avatar: http://dannicheer.com/images/avatar.jpg
+      descr: biubiubiu

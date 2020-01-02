@@ -12,7 +12,7 @@ menu:
     - 标签  || /tags/ || fa fa-tags
     - 分类  || /categories/ || fa fa-folder-open
   
- # Link: /link/ || fa fa-link
+  友链: /link/ || fa fa-link
   留言板: /comment/ || fa fa-coffee
 # 关于我: /about/ || fa fa-heart
  # List||fa fa-list:
@@ -292,13 +292,13 @@ qihu_site_verification:
 
 # 友情鏈接界面設置 
 Flink:
-  headline: 友情鏈接
-  info_headline: 我的Blog資料
-  name: Blog 名字： JerryC
-  address: Blog 地址： https://jerryc.me/
-  avatar: Blog 頭像： https://jerryc.me/img/avatar.png
-  info: Blog 簡介： 今日事,今日畢
-  comment: 如果需要交換友鏈,請留言
+  headline: 友情链接
+  info_headline: 我的Blog资料
+  name: Blog 名字： JQuer1y Blog
+  address: Blog 地址： http://www.sshenzx.com/
+  avatar: Blog 头像： http://www.sshenzx.com/img/avatar.jpg
+  info: Blog 简介： 没啥好说的
+  comment: 如果需要交换友联，请留言
 
 # 打賞按鈕
 reward:
