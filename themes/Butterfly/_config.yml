@@ -140,7 +140,7 @@ avatar: /img/avatar.jpg
 
 # the banner image of index
 # if the banner of another page not setting,it will show the top_img
-top_img: /img/top_img2.jpg
+top_img: /img/top_img5.jpg
 
 #the banner image of post
 # if the post not set the post cover and post top image, it will show it
