@@ -2,7 +2,7 @@
 title: 该升级你的JUnit版本了-JUnit5基本介绍
 tags: 单元测试
 categories: Java学习笔记
-description: 干货！Junit5介绍！
+description: 今天来扯扯Junit5
 date: 2020-03-07 18:02:27
 ---
 
