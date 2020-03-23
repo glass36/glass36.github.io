@@ -18,3 +18,19 @@ section#rightside.rightside
     if is_post() && page.toc != false && theme.toc.enable
       i#mobile-toc-button.fa.fa-list-ul.close(title=_p("rightside.toc") aria-hidden="true")
     i.fa.fa-arrow-up#go-up(title=_p("rightside.back_to_top") aria-hidden="true")
+  a#musicControl(onclick='musicClick()')   
+  #music163player
+      iframe(frameborder='no', border='0', marginwidth='0', marginheight='0', width='330', height='86', src='//music.163.com/outchain/player?type=2&id=1408212003&auto=1&height=66')
+
+script.
+      var musicClick = function(){
+      /*set music button display*/
+      var bShow = document.getElementById("musicControl").classList.contains('on');
+      if(bShow){
+      document.getElementById("musicControl").classList.remove("on");
+      document.getElementById("music163player").classList.remove("show");
+      } else {
+      document.getElementById("musicControl").classList.add("on");
+      document.getElementById("music163player").classList.add("show");
+      }
+      }

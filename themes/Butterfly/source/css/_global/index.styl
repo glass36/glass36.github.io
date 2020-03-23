@@ -178,6 +178,34 @@ img[src=""],img:not([src])
 #body-wrap
   transition: all .3s
 
+#musicControl
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background: url(https://pubimg.xingren.com/bbdfc746-b6a3-4cda-854f-67513ec3689a.png);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    background-repeat: no-repeat;
+    border-bottom: 0;
+    transition: 0.5s ease;
+
+ #musicControl.on 
+  transform: rotate(180deg);
+
+ #music163player 
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 100px;
+
+ #music163player.show 
+  display: block;
+
 @media screen and (max-width: $bg)
   i#toggle-sidebar,
   #sidebar
@@ -185,3 +213,5 @@ img[src=""],img:not([src])
 
   body
     padding-left: 0 !important
+
+

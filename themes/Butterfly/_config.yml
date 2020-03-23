@@ -140,7 +140,7 @@ avatar: /img/avatar.jpg
 
 # the banner image of index
 # if the banner of another page not setting,it will show the top_img
-top_img: /img/top_img5.jpg
+top_img: /img/top_img7.jpg
 
 #the banner image of post
 # if the post not set the post cover and post top image, it will show it
@@ -260,7 +260,7 @@ valine:
 # ------------------------------------
 since: 2019
 
-footer_custom_text: 愿世界的美好与你环环相扣
+footer_custom_text: 所念皆星河,可望不可得
 
 footer_copyright:
   enable: false
@@ -297,7 +297,7 @@ Flink:
   name: Blog 名字： JQuer1y Blog
   address: Blog 地址： http://www.sshenzx.com/
   avatar: Blog 头像： http://www.sshenzx.com/img/avatar.jpg
-  info: Blog 简介： 没啥好说的
+  info: Blog 简介： 所念皆星河,可望不可得
   comment: 如果需要交换友链，请留言
 
 # 打賞按鈕
@@ -428,8 +428,9 @@ hr:
 subtitle: 
   enable: true
   sub:
-    - 我们一路奋战&#44;不是为了改变世界&#44;而是为了不让世界改变我们。
-    - 世界的美好与你环环相扣
+    - 我们身处阴沟&#44;但仍有人仰望星空
+    - 我想环游整片星空&#44;找到你的星球
+    - 还有星月可以寄望&#44;还有宇宙浪漫不止&#44;人间值得
 
 
 

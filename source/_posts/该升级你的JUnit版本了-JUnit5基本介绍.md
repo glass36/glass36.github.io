@@ -2,7 +2,7 @@
 title: 该升级你的JUnit版本了-JUnit5基本介绍
 tags: 单元测试
 categories: Java学习笔记
-description: 今天来扯扯Junit5
+description: 今天来扯扯JUnit5
 date: 2020-03-07 18:02:27
 ---
 
@@ -13,14 +13,14 @@ date: 2020-03-07 18:02:27
 # 前言
 很久很久很久很久....没有写技术向的文章了，今天呢就来写一篇关于单元测试的文章把。写这篇文章的原因呢是因为几个月前看到隔壁组的同事写的单元测试，当场就被惊艳了。第一次发现原来单元测试还可以这么写，相比之下我以前写的那堆测试简直是恶心自己用的。于是好好研究了一番他们项目组使用的JUnit5，总结了一些新特性，希望有天自己也能写出让人惊艳的代码吧。
 
-# Junit5介绍
+# JUnit5介绍
 JUnit作为目前Java领域内最为流行的单元测试框架已经走过了数十年。而JUnit5在JUnit4停止更新版本的3年后终于也于2017年发布了。
 
-作为最新版本的Junit框架，JUnit5与之前版本的Junit框架有很大的不同。首先Junit5由来自三个不同子项目的几个不同模块组成。
+作为最新版本的JUnit框架，JUnit5与之前版本的Junit框架有很大的不同。首先Junit5由来自三个不同子项目的几个不同模块组成。
 
 > **JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage**
 
-**Junit Platform**: Junit Platform是在JVM上启动测试框架的基础，不仅支持Junit自制的测试引擎，其他测试引擎也都可以接入。
+**JUnit Platform**: Junit Platform是在JVM上启动测试框架的基础，不仅支持Junit自制的测试引擎，其他测试引擎也都可以接入。
 
 **JUnit Jupiter**: JUnit Jupiter提供了JUnit5的新的编程模型，是JUnit5新特性的核心。内部
 包含了一个测试引擎，用于在Junit Platform上运行。
@@ -33,9 +33,9 @@ JUnit作为目前Java领域内最为流行的单元测试框架已经走过了�
 
 只要实现了JUnit的测试引擎接口，任何测试框架都可以在JUnit Platform上运行，这代表着JUnit5将会有着很强的拓展性。
 
-# 开启一个Junit5项目吧！
+# 开启一个JUnit5项目吧！
 
-引入Junit5相比之前的测试框架要相对复杂，需要引入3个模块的jar包。由于目前项目都是由gradle构建的，因此以下的配置皆为gradle配置。
+引入JUnit5相比之前的测试框架要相对复杂，需要引入3个模块的jar包。由于目前项目都是由gradle构建的，因此以下的配置皆为gradle配置。
 
 ```Java
     testCompile("org.junit.platform:junit-platform-launcher:1.6.0")
@@ -54,7 +54,7 @@ test {
     useJUnitPlatform()
 }
 ```
-引入Junit5后即可开启第一个单元测试了。注意**@Test**注解使用的是org.junit.jupiter.api.Test包下的，不要再用成Junit4版本的了。
+引入JUnit5后即可开启第一个单元测试了。注意**@Test**注解使用的是org.junit.jupiter.api.Test包下的，不要再用成Junit4版本的了。
 
 ```Java
 import org.junit.jupiter.api.Test; //注意这里使用的是jupiter的Test注解！！
@@ -97,7 +97,7 @@ JUnit5使用了新的断言类:org.junit.jupiter.api.Assertions。相比之前�
 
 以下为两个与JUnit4不太一样的断言方式:
 #### 1. 异常断言
-在Junit4时期，想要测试方法的异常情况时，需要用**@Rule**注解的ExpectedException变量还是比较麻烦的。而JUnit5提供了一种新的断言方式**Assertions.assertThrows()** ,配合函数式编程就可以进行使用。
+在JUnit4时期，想要测试方法的异常情况时，需要用**@Rule**注解的ExpectedException变量还是比较麻烦的。而JUnit5提供了一种新的断言方式**Assertions.assertThrows()** ,配合函数式编程就可以进行使用。
 
 ```Java
 @Test
