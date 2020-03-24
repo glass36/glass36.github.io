@@ -215,7 +215,7 @@ img:not([src]) {
   height: 40px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  background: url("https://pubimg.xingren.com/bbdfc746-b6a3-4cda-854f-67513ec3689a.png");
+  background: url("../../img/music.png");
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
