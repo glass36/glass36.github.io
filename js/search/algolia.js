@@ -1,37 +1,39 @@
 $(function () {
   $('a.social-icon.search').on('click', function () {
-    $('body').css({ width: '100%', overflow: 'hidden' })
-    $('.search-dialog').css('display', 'block')
+    $('body').css('width', '100%')
+    $('body').css('overflow', 'hidden')
+
+    $('.search-dialog').animate({}, function () {
+      $('.search-dialog').css({
+        'display': 'block',
+        'animation': 'titlescale 0.5s'
+      }),300
+    })
+
     $('.ais-search-box--input').focus()
-    $('.search-mask').fadeIn()
+    $('.search-mask').fadeIn();
     // shortcut: ESC
-    document.addEventListener('keydown', function f (event) {
-      if (event.code === 'Escape') {
-        closeSearch()
-        document.removeEventListener('keydown', f)
+    document.addEventListener('keydown', function f(event) {
+      if (event.code == "Escape") {
+        closeSearch();
+        document.removeEventListener('keydown', f);
       }
     })
   })
 
   var closeSearch = function () {
-    $('body').css('width', '')
-    $('body').css('overflow', '')
-    $('.search-dialog').css({
-      animation: 'search_close .5s'
-    })
+    $('body').css('overflow', 'auto')
 
     $('.search-dialog').animate({}, function () {
-      setTimeout(function () {
-        $('.search-dialog').css({
-          animation: '',
-          display: 'none'
-        })
-      }, 500)
+      $('.search-dialog').css({
+        'display': 'none'
+      })
     })
 
-    $('.search-mask').fadeOut()
+    $('.search-mask').fadeOut();
   }
-  $('.search-mask, .search-close-button').on('click touchstart', closeSearch)
+  $('.search-mask, .search-close-button').on('click', closeSearch)
+
 
   var algolia = GLOBAL_CONFIG.algolia
   var isAlgoliaValid = algolia.appId && algolia.apiKey && algolia.indexName
@@ -100,7 +102,7 @@ $(function () {
           return (
             '<hr>' +
             stats +
-            '<span class="algolia-logo pull_right">' +
+            '<span class="algolia-logo pull-right">' +
             '  <img src="' + GLOBAL_CONFIG.root + 'img/algolia.svg" alt="Algolia" />' +
             '</span>'
           )
@@ -129,5 +131,6 @@ $(function () {
       }
     })
   )
+
   search.start()
 })
