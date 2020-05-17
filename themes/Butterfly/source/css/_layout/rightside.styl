@@ -1,64 +1,89 @@
-#rightside 
-  right: -38px
+#rightside
   position: fixed
+  right: -38px
   bottom: 40px
-  transition: all .3s
-  opacity 0
+  opacity: 0
+  transition: all .5s
 
   #rightside-config-hide
-    transition: all .3s
-    display none
+    transform: translate(35px, 0)
 
-  #readmode,
-  #font_plus,
-  #font_minus,
-  #to_comment,
-  .nightshift,
-  #mobile-toc-button,
-  #go-up,
-  #rightside_config
-    width: 30px
-    height: 30px
-    background-color: $light-blue
-    color: $white
-    text-align: center
-    line-height: 29px
-    font-size: 16px
-    display: block
-    margin-bottom: 2px
-    cursor: pointer
-    text-decoration: none
+  .rightside-in
+    transform: translate(0, 0) !important
+    animation: rightsideIn .3s
 
-    &:hover  
-      background-color: $ruby 
-  
+  .rightside-out
+    animation: rightsideOut .3s
+
+  & > div
+    & > i,
+    & > a,
+    & > div
+      display: block
+      margin-bottom: 2px
+      width: 30px
+      height: 30px
+      background-color: $light-blue
+      color: $button-color
+      text-align: center
+      font-size: 16px
+      line-height: 29px
+      cursor: pointer
+
+      &:hover
+        background-color: $theme-button-hover-color
+
   #rightside_config
     i
       animation: avatar_turn_around 2s linear infinite
 
-  .translate_chn_to_cht
-    width: 30px
-    height: 30px
-    background-color: $light-blue
-    color: $white
-    text-align: center
-    line-height: 29px
-    font-size: 16px
-    display: block
-    margin-bottom: 2px
-    cursor: pointer
-    text-decoration: none
-
-    &:hover  
-      background-color: $ruby 
-  
   #mobile-toc-button
     display: none
 
+#musicControl
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background: url(../../img/music.png);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    background-repeat: no-repeat;
+    border-bottom: 0;
+    transition: 0.5s ease;
+    background-position: center;
+
+ #musicControl.on 
+  transform: rotate(180deg);
+
+ #music163player 
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 100px;
+
+ #music163player.show 
+  display: block;
+
 @media screen and (max-width: $bg)
-  #rightside 
+  #rightside
     #mobile-toc-button
       display: block
-  
 
+@keyframes rightsideIn
+  0%
+    transform: translate(30px, 0)
 
+  100%
+    transform: translate(0, 0)
+
+@keyframes rightsideOut
+  0%
+    transform: translate(0, 0)
+
+  100%
+    transform: translate(30px, 0)

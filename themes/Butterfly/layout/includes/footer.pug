@@ -1,4 +1,4 @@
-#footer
+#footer-wrap
   - var now = new Date()
   - var nowYear = now.getFullYear()
   if theme.since && theme.since != nowYear
@@ -8,7 +8,7 @@
   if theme.footer_copyright.enable
     .framework-info
       span= _p('footer.driven') + ' '
-      a(href='http://hexo.io')
+      a(href='https://hexo.io')
         span Hexo
       span.footer-separator |
       span= _p('footer.theme') + ' '

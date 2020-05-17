@@ -19,7 +19,6 @@ page:
 
 sticky: Sticky
 no_title: No title
-archives: Archives
 
 post:
   created: Created
@@ -27,11 +26,13 @@ post:
   wordcount: Word count
   min2read: "Reading time: %s min"
   page_pv: Post View
+  comments: Comments
   copyright:
     author: Author
     link: Link
     copyright_notice: Copyright Notice
     copyright_content: 'All articles in this blog are licensed under <a href="%s">%s</a> unless stating additionally.'
+  recommend: Recommend
 
 search: Search
 algolia_search:
@@ -72,8 +73,6 @@ donate: Donate
 share: Share
 bookmark:
   title: Bookmark
-  message_prev: Press
-  message_next: to bookmark this page
 
 rightside:
   readmode_title: Read Mode
@@ -93,3 +92,14 @@ copy_copyright:
   link: Link
   source: Source
   info: Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+
+Snackbar:
+  bookmark:
+    message_prev: Press
+    message_next: to bookmark this page
+  chs_to_cht: Traditional Chinese Activated Manually
+  cht_to_chs: Simplified Chinese Activated Manually
+  day_to_night: Dark Mode Activated Manually
+  night_to_day: Light Mode Activated Manually
+
+error_title: Page not found
