@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -98,7 +98,7 @@ theme: Butterfly
 deploy:
   type: git
   repo:
-   github: https://github.com/glass36/glass36.github.io.git
+   tencent: root@172.81.242.191:/home/git/hexoBlog
   branch: master
 
 #搜索

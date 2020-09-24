@@ -5,7 +5,7 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  首页: / || fa fa-home
+  首页: /|| fa fa-home
   时间轴: /archives/ || fa fa-archive
   文章||fa fa-list:
     - 标签  || /tags/ || fa fa-tags
